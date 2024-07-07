@@ -1,6 +1,10 @@
-#include <iostream>
+#include "network/manager.hpp"
+
+using namespace mbts::network;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    NetworkManager manager = NetworkManager();
+    manager.RegisterBTS(BTS({0, 0}));
+
     return 0;
 }
